@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.js">
+</head>
+<body>
+    <div class="main-body">
+        <div class="left-portion">
+          <div class="left-inner">
+            <h1 id="left-text">My food</h1>
+            <button onclick="toggleFirst('top')" id="left-1"><p id="p1">pizza</p></button>>
+            <button onclick="toggleSecond('middle')" id="left-2"><p id="p1">burger</p></button>
+            <button onclick="toggleThird('down')" id="left-3"><p id="p1">tacos</p></button>
+          </div>
+    </div>
+    <div class="right-portion">
+        <div id="down">
+            <h1 class="tacoz">Tacoz</h1>
+            <img src="tacos.jpg" id="tac-img" alt="">
+            <label for="tacos" id="buy"><h1 id="buyme">Buy me</h1></label>
+
+
+            <div id="middle">
+            <h1 class="pizza">Pizza</h1>
+            <img src="pizza.jpg" id="piz-img" alt="">
+            <label for="pizza" id="buy"><h1 id="buyme">Buy me</h1></label>
+            
+
+            <div id="top">
+            <h1 class="burger">Burger</h1>
+            <img src="burger.jpg" id="bur-img" alt="">
+            <label for="pizza" id="buy"><h1 id="buyme">Buy me</h1></label>
+            </div>
+         </div>
+        </div>
+    </div>
+   <script>
+    function toggleFirst() {
+  let one = document.getElementById("top");
+  if (one.style.display == "none") {
+    one.style.display = "block"
+  } else {
+    one.style.display = "none"
+  }
+}
+
+function toggleSecond() {
+  let two = document.getElementById("down");
+  if (two.style.display == "none") {
+    two.style.display = "block"
+  } else {
+    two.style.display = "none"
+  }
+}
+
+function toggleThird() {
+  let three = document.getElementById("middle");
+  if (three.style.display == "none") {
+    three.style.display = "block"
+  } else {
+    three.style.display = "none"
+  }
+}
+   </script>
+   
+                   
+</body>
+</html>
